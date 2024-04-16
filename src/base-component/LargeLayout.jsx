@@ -15,17 +15,7 @@ const LargeLayout = ({ intl }) => (
       </Hyperlink>
       <div className="min-vh-100 d-flex align-items-center">
         <div className={classNames({ 'large-yellow-line mr-n4.5': getConfig().SITE_NAME === 'edX' })} />
-        <h1
-          className={classNames(
-            'display-2 text-white mw-xs',
-            { 'ml-6': getConfig().SITE_NAME !== 'edX' },
-          )}
-        >
-          {intl.formatMessage(messages['start.learning'])}
-          <div className="text-accent-a">
-            {intl.formatMessage(messages['with.site.name'], { siteName: getConfig().SITE_NAME })}
-          </div>
-        </h1>
+ 
       </div>
     </div>
   </div>

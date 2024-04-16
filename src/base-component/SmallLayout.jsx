@@ -16,17 +16,6 @@ const SmallLayout = ({ intl }) => (
       </Hyperlink>
       <div className="d-flex align-items-center mb-3 mt-3 mr-3">
         <div className={classNames({ 'small-yellow-line mr-n2.5': getConfig().SITE_NAME === 'edX' })} />
-        <h1
-          className={classNames(
-            'text-white mt-3.5 mb-3.5',
-            { 'ml-4.5': getConfig().SITE_NAME !== 'edX' },
-          )}
-        >
-          <span className="mr-1">{intl.formatMessage(messages['start.learning'])}</span>
-          <span className="text-accent-a d-inline-block">
-            {intl.formatMessage(messages['with.site.name'], { siteName: getConfig().SITE_NAME })}
-          </span>
-        </h1>
       </div>
     </div>
   </span>
