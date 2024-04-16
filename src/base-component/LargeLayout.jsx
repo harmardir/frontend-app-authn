@@ -10,7 +10,7 @@ const LargeLayout = ({ intl }) => (
 
   <div 
       className="w-50 d-flex banner__image large-layout"
-      style={{ backgroundImage: `url('/static/images/banner_large.png')` }}
+      style={{ backgroundImage: `url('https://undp-lms.kashida-learning.co/static/undp_ac_theme/images/banner_large.png')` }}
  >
     <div className="col-md-9 bg-primary-400">
       <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
