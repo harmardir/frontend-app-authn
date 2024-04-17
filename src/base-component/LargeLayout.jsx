@@ -9,7 +9,8 @@ import classNames from 'classnames';
 const LargeLayout = ({ intl }) => (
 
   <div className="w-50 d-flex banner__image large-layout"
-  style={{ backgroundImage: `url('https://undp-lms.kashida-learning.co/static/undp_ac_theme/images/login_banner_large.png')`
+  style={{ backgroundImage: `url('https://undp-lms.kashida-learning.co/static/undp_ac_theme/images/login_banner_large.png')`,
+           width: '685px'
     }}
     >
       <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
