@@ -8,11 +8,13 @@ import classNames from 'classnames';
 
 const LargeLayout = ({ intl }) => (
 
-  <div className="w-50 d-flex banner__image large-layout">
+  <div className="w-50 d-flex banner__image large-layout"
+  style={{ backgroundImage: `url('https://undp-lms.kashida-learning.co/static/undp_ac_theme/images/login_banner_large.png')`
+    }}
+    >
       <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
         <Image className="logo position-absolute" alt={getConfig().SITE_NAME} src={getConfig().LOGO_WHITE_URL} />
       </Hyperlink>
-      <Image className="background-image" alt="Background" src="https://undp-lms.kashida-learning.co/static/undp_ac_theme/images/login_banner_large.png" />
       <div className="min-vh-100 d-flex align-items-center">
         <div className={classNames({ 'large-yellow-line mr-n4.5': getConfig().SITE_NAME === 'edX' })} />
       </div>
