@@ -14,8 +14,9 @@ const LargeLayout = ({ intl }) => (
     }}
     >
       {/* Text overlay */}
-    <div className="position-absolute top-0 start-0 text-white p-4">
-      <p>مكافحة الفساد،
+      <div className="position-absolute top-0 end-0 text-white p-4">
+      <p className="banner-text">مكافحة الفساد،
+      <br/>
 بدءاً من مكان العمل.</p>
     </div>
 
