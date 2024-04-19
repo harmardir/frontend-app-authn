@@ -13,6 +13,12 @@ const LargeLayout = ({ intl }) => (
            width: '685px'
     }}
     >
+      {/* Text overlay */}
+    <div className="position-absolute top-0 start-0 text-white p-4">
+      <p>مكافحة الفساد،
+بدءاً من مكان العمل.</p>
+    </div>
+
       <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
         <Image className="logo position-absolute" alt={getConfig().SITE_NAME} src={getConfig().LOGO_WHITE_URL} />
       </Hyperlink>
