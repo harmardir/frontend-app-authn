@@ -191,6 +191,12 @@
   width: 685px !important;
 }
 
+.banner__image {
+  background-size: contain;
+background-repeat: no-repeat;
+height: calc(685px*(869 / 685));
+
+}
 .nav-tabs .nav-link {
   color: #06263D !important;
   font-family: "Noto Kufi Arabic" !important;
