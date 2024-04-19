@@ -8,10 +8,18 @@ import classNames from 'classnames';
 import messages from './messages';
 
 const MediumLayout = ({ intl }) => (
-  <>
-    <div className="w-100 medium-screen-top-stripe" />
-    <div className="w-100 p-0 mb-3 d-flex">
-      <div className="col-md-10 bg-primary-400">
+
+    
+    <div className="w-100 p-0 mb-3 d-flex banner__image medium-layout"
+    style={{ backgroundImage: `url('https://undp-lms.kashida-learning.co/static/undp_ac_theme/images/login_banner_md.png')`
+    }}>
+      {/* Text overlay */}
+      <div className="position-absolute top-0 end-0 text-white p-4">
+      <p className="banner-text-md">مكافحة الفساد،
+      <br/>
+بدءاً من مكان العمل.</p>
+    </div>
+        
         <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
           <Image alt={getConfig().SITE_NAME} className="logo" src={getConfig().LOGO_WHITE_URL} />
         </Hyperlink>
@@ -20,9 +28,8 @@ const MediumLayout = ({ intl }) => (
           <div>
           </div>
         </div>
-      </div>
+     
     </div>
-  </>
 );
 
 MediumLayout.propTypes = {

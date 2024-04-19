@@ -9,7 +9,12 @@ import messages from './messages';
 
 const SmallLayout = ({ intl }) => (
   <span className="bg-primary-400 w-100">
-    <div className="col-md-12 small-screen-top-stripe" />
+    <div className="position-absolute top-0 end-0 text-white p-4">
+      <p className="banner-text-md">مكافحة الفساد،
+      <br/>
+بدءاً من مكان العمل.</p>
+    </div>
+   
     <div>
       <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
         <Image className="logo-small" alt={getConfig().SITE_NAME} src={getConfig().LOGO_WHITE_URL} />
