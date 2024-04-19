@@ -10,7 +10,7 @@ import messages from './messages';
 const MediumLayout = ({ intl }) => (
 
     
-    <div className="w-100 p-0 mb-3 d-flex banner__image medium-layout"
+    <div className="w-100 p-0 mb-3 d-flex banner__image medium-layout midium-banner"
     style={{ backgroundImage: `url('https://undp-lms.kashida-learning.co/static/undp_ac_theme/images/login_banner_md.png')`
     }}>
       {/* Text overlay */}
