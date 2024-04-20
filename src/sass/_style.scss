@@ -592,3 +592,22 @@ select.form-control {
 .pgn__form-control-decorator-trailing {
   right: 0 !important;
 }
+
+.pgn__form-control-decorator-group {
+  color: var(--Blue-Dark, #06263D) !important;
+  text-align: right;
+  font-family: "Noto Kufi Arabic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+
+.form-control {
+  border: none !important;
+  border-bottom: 2px solid #06263D !important;
+  border-radius: 0 !important !important;
+
+}
