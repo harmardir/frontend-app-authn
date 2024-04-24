@@ -8,11 +8,7 @@ import classNames from 'classnames';
 
 const LargeLayout = ({ intl }) => (
 
-  <div className="w-50 d-flex banner__image large-layout"
-  style={{ backgroundImage: `url('https://undp-lms.kashida-learning.co/static/undp_ac_theme/images/login_banner_large.png')`,
-           width: '685px'
-    }}
-    >
+  <div className="w-50 d-flex banner__image large-layout">
       {/* Text overlay */}
       <div className="position-absolute top-0 end-0 text-white p-4">
       <p className="banner-text">مكافحة الفساد،

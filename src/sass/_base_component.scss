@@ -187,15 +187,16 @@
   transform: rotate(102.02deg);
 }
 
-.w-50 {
-  width: 685px !important;
-}
-
 .banner__image {
   background-size: contain;
 background-repeat: no-repeat;
 height: calc(685px*(869 / 685));
+}
 
+.large_layout {
+  background-image: url('https://undp-lms.kashida-learning.co/static/undp_ac_theme/images/login_no_background.png');
+  background-color: #0468B1;
+  position: relative;
 }
 
 .midium-banner {
