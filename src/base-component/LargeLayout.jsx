@@ -10,7 +10,7 @@ const LargeLayout = ({ intl }) => (
 
   <div className="w-50 d-flex banner__image large-layout">
       {/* Text overlay */}
-      <div className="position-absolute top-0 end-0 text-white p-4">
+      <div className="position-absolute text-white p-4 text-overlay">
       <p className="banner-text">مكافحة الفساد،
       <br/>
 بدءاً من مكان العمل.</p>
