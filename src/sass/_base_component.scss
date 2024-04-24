@@ -188,14 +188,15 @@
 }
 
 .banner__image {
-  background-size: contain;
-background-repeat: no-repeat;
-height: calc(685px*(869 / 685));
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .w-50 {
   background-image: url('https://undp-lms.kashida-learning.co/static/undp_ac_theme/images/login_no_background.png');
   background-color: #0468B1;
+  border-radius: 64px 0px 0px 64px;
+  border-bottom: 6px solid var(--Blue-Dark, #06263D);
   position: relative;
 }
 
