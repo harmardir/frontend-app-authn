@@ -596,18 +596,27 @@ select.form-control {
 .pgn__form-control-decorator-group {
   color: var(--Blue-Dark, #06263D) !important;
   text-align: right;
-  font-family: "Noto Kufi Arabic";
+  font-family: "Noto Kufi Arabic" !important;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: capitalize;
+  opacity: 0.5;
 }
 
 
 .form-control {
   border: none !important;
-  border-bottom: 2px solid #06263D !important;
+  border-bottom: 1px solid #06263D !important;
   border-radius: 0 !important;
 
+}
+
+.alert-content {
+  font-family: "Noto Kufi Arabic" !important;
+}
+
+a#forgot-password {
+  font-family: "Noto Kufi Arabic" !important;
 }
