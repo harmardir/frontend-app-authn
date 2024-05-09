@@ -615,8 +615,21 @@ select.form-control {
 
 .alert-content {
   font-family: "Noto Kufi Arabic" !important;
+  color: var(--Blue-Dark, #06263D) !important;
+}
+
+.alert-heading {
+  color: var(--Blue-Dark, #06263D) !important;
 }
 
 a#forgot-password {
   font-family: "Noto Kufi Arabic" !important;
+}
+
+.pgn__form-control-description {
+  font-family: "Noto Kufi Arabic" !important;
+}
+
+.pgn__form-group {
+  margin-bottom: 24px !important;
 }
