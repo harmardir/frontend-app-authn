@@ -213,8 +213,9 @@
 
 .midium-banner {
   background-size: contain;
-background-repeat: no-repeat;
-height:224px;
+  background-repeat: no-repeat;
+  height:224px;
+  background-color: #0468B1;
 
 }
 
@@ -272,4 +273,9 @@ height:224px;
 
 .bg-primary-400 {
   background-color: #0468B1 !important;
+}
+
+
+#forgot-password {
+  font-size: 16px !important;
 }

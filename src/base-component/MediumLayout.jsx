@@ -14,7 +14,9 @@ const MediumLayout = ({ intl }) => (
     style={{ backgroundImage: `url('https://undp-lms.kashida-learning.co/static/undp_ac_theme/images/login_banner_md.png')`
     }}>
       {/* Text overlay */}
-      <div className="position-absolute top-0 end-0 text-white p-4">
+      <div className="position-absolute text-white p-4"
+    style={{left: '25%'}}
+    >
       <p className="banner-text-md">مكافحة الفساد،
       <br/>
 بدءاً من مكان العمل.</p>
