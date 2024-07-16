@@ -9,9 +9,7 @@ import messages from './messages';
 
 const SmallLayout = ({ intl }) => (
   <span className="bg-primary-400 w-100">
-    <div className="position-absolute top-0 end-0 text-white p-4"
-    style={{left: '5%'}}
-    >
+    <div className="position-absolute top-0 end-0 text-white p-4">
       <p className="banner-text-sm">مكافحة الفساد،
       <br/>
 بدءاً من مكان العمل.</p>
