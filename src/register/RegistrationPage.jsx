@@ -256,8 +256,10 @@ class RegistrationPage extends React.Component {
         } else {
           payload[fieldName] = this.state.values[fieldName];
         }
-        dynamicFieldErrorMessages[fieldName] = this.props.fieldDescriptions[fieldName].error_message;
-      });
+      // Check if error_message is an object and extract string
+      const errorMessage = this.props.fieldDescriptions[fieldName].error_message;
+      dynamicFieldErrorMessages[fieldName] = typeof errorMessage === 'object' ? errorMessage.required : errorMessage;
+    });
       if (
         this.props.fieldDescriptions[FIELDS.HONOR_CODE]
         && this.props.fieldDescriptions[FIELDS.HONOR_CODE].type === 'tos_and_honor_code'
@@ -389,6 +391,7 @@ class RegistrationPage extends React.Component {
     const { name, value } = e.target;
     if (!value.trim()) {
       errors[name] = this.props.fieldDescriptions[name].error_message;
+      errors[name] = typeof errorMessage === 'object' ? errorMessage.required : errorMessage;
     }
     if (name === 'confirm_email' && value.length > 0 && this.state.email && value !== this.state.email) {
       errors.confirm_email = intl.formatMessage(messages['email.do.not.match']);
