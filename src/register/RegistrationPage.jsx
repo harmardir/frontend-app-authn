@@ -389,10 +389,19 @@ class RegistrationPage extends React.Component {
     const { intl } = this.props;
     const { errors } = this.state;
     const { name, value } = e.target;
-    if (!value.trim()) {
-      errors[name] = this.props.fieldDescriptions[name].error_message;
-      errors[name] = typeof errorMessage === 'object' ? errorMessage.required : errorMessage;
-    }
+    let errorMessage = this.props.fieldDescriptions[name].error_message;
+
+    // Checking if the error message is an object and extracting the appropriate message
+    if (typeof errorMessage === 'object') {
+      errorMessage = errorMessage.required || intl.formatMessage(messages['default.error.message']);
+  }
+
+  if (!value.trim()) {
+    errors[name] = errorMessage;
+} else {
+    errors[name] = '';
+}
+
     if (name === 'confirm_email' && value.length > 0 && this.state.email && value !== this.state.email) {
       errors.confirm_email = intl.formatMessage(messages['email.do.not.match']);
     }
