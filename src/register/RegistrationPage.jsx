@@ -59,6 +59,8 @@ import TermsOfService from './TermsOfService';
 import UsernameField from './UsernameField';
 import { getLevenshteinSuggestion, getSuggestionForInvalidEmail } from './utils';
 
+import DynamicFieldHandler from './DynamicFieldHandler';
+
 class RegistrationPage extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -833,6 +835,53 @@ class RegistrationPage extends React.Component {
                 floatingLabel={intl.formatMessage(messages['registration.password.label'])}
               />
             )}
+
+             {/* Conditionally render the dynamic fields based on age_bracket */}
+            {this.state.age_bracket === '14-19' ? (
+         <>
+      <FormGroup
+        name="school_name"
+        value={this.state.school_name}
+        autoComplete="on"
+        handleBlur={this.handleOnBlur}
+        handleChange={this.handleOnChange}
+        errorMessage={this.state.errors.school_name}
+        floatingLabel={intl.formatMessage(messages['registration.schoolname.label'])}
+      />
+      <FormGroup
+        name="school_grade"
+        value={this.state.school_grade}
+        autoComplete="on"
+        handleBlur={this.handleOnBlur}
+        handleChange={this.handleOnChange}
+        errorMessage={this.state.errors.school_grade}
+        floatingLabel={intl.formatMessage(messages['registration.schoolgrade.label'])}
+         />
+         </>
+        ) : (
+         <>
+        <FormGroup
+        name="institution_name"
+        value={this.state.institution_name}
+        autoComplete="on"
+        handleBlur={this.handleOnBlur}
+        handleChange={this.handleOnChange}
+        errorMessage={this.state.errors.institution_name}
+        floatingLabel={intl.formatMessage(messages['registration.institutionname.label'])}
+      />
+      <FormGroup
+        name="institution_type"
+        value={this.state.institution_type}
+        autoComplete="on"
+        handleBlur={this.handleOnBlur}
+        handleChange={this.handleOnChange}
+        errorMessage={this.state.errors.institution_type}
+        floatingLabel={intl.formatMessage(messages['registration.institutiontype.label'])}
+      />
+    </>
+  )}
+
+  
             {!(this.showDynamicRegistrationFields)
             && (
               <CountryDropdown
