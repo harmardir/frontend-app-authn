@@ -1,0 +1,98 @@
+// Primary Button
+  
+@mixin primary-button {
+    background:#FFCB05 ;
+    color: #262626;
+    border: none;
+    text-decoration: none;
+  
+    &:hover {
+      background:#6BCABA;
+      color: #262626;
+      border:none;
+      text-decoration: none;
+    }
+  
+    &.active {
+      background:#6BCABA;
+      color: #262626;
+      border:none;
+      text-decoration: none;
+    }
+  
+    &.inactive {
+      background: #DEDEDE;
+      color: #5B6770;
+      border:none;
+      text-decoration: none;
+    }
+  }
+  
+  // Secondary Button
+  
+  @mixin secondary-button {
+    border-right: 3px solid #262626;
+    border-bottom: 2px solid #262626;
+    background:#EDEDED;
+    color: #262626;
+    border-radius: none;
+    text-decoration: none;
+
+  
+  
+    &:hover {
+      background:#6BCABA;
+      color: #262626;
+      text-decoration: none;
+  
+    }
+  
+    &.active {
+      background:#6BCABA;
+      color: #262626;
+      border: none;
+      text-decoration: none;
+  
+    }
+  
+    &.inactive {
+      border-right: 3px solid #DEDEDE;
+      border-bottom: 2px solid #DEDEDE;
+      background:#EDEDED;
+      color: #5B6770;
+      text-decoration: none;
+    }
+  }
+
+  // Navigation Menu Buttons
+
+@mixin navigation-menu-button {
+  background: #FFF;
+  color: #262626;
+  border: none;
+  text-decoration: none;
+
+
+  &:hover {
+    background:#6BCABA;
+    color: #262626;
+    border: none;
+    text-decoration: none;
+  }
+
+  &.active {
+    border-top: 5px solid #258474;
+    background: #6BCABA;
+    color: #262626;
+    text-decoration: none;
+
+  }
+
+  &.inactive {
+    border-top: 5px solid #909695;
+    background: #DEDEDE;
+    color: #5B6770;
+    text-decoration: none;
+  }
+}
+  

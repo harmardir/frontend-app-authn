@@ -10,13 +10,13 @@
     "extends @edx/browserslist-config"
   ],
   "scripts": {
-    "build": "fedx-scripts webpack",
-    "i18n_extract": "BABEL_ENV=i18n fedx-scripts babel src --quiet > /dev/null",
-    "lint": "fedx-scripts eslint --ext .js --ext .jsx .",
-    "snapshot": "fedx-scripts jest --updateSnapshot",
-    "start": "fedx-scripts webpack-dev-server --progress",
-    "test": "fedx-scripts jest --coverage --passWithNoTests"
-  },
+  "build": "node ./node_modules/@edx/frontend-build/bin/fedx-scripts.js webpack",
+  "i18n_extract": "BABEL_ENV=i18n node ./node_modules/@edx/frontend-build/bin/fedx-scripts.js babel src --quiet > /dev/null",
+  "lint": "node ./node_modules/@edx/frontend-build/bin/fedx-scripts.js eslint --ext .js --ext .jsx .",
+  "snapshot": "node ./node_modules/@edx/frontend-build/bin/fedx-scripts.js jest --updateSnapshot",
+  "start": "node ./node_modules/@edx/frontend-build/bin/fedx-scripts.js webpack-dev-server --progress",
+  "test": "node ./node_modules/@edx/frontend-build/bin/fedx-scripts.js jest --coverage --passWithNoTests"
+},
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint"

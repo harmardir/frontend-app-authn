@@ -5,16 +5,16 @@ import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { Hyperlink, Image } from '@edx/paragon';
 import classNames from 'classnames';
 
+import bennerVertical from './banner_vertical.png';
+
 
 const LargeLayout = ({ intl }) => (
 
-  <div className="w-50 d-flex banner__image large-layout">
-      {/* Text overlay */}
-      <div className="position-absolute text-white p-4 text-overlay">
-      <p className="banner-text">مكافحة الفساد،
-      <br/>
-بدءاً من مكان العمل.</p>
-    </div>
+  <div className="w-50 d-flex banner__image large-layout"
+   style={{ backgroundImage: `url('${bennerVertical}')`, backgroundSize: 'cover', backgroundPosition: 'center'
+}}>
+
+     
 
       <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
         <Image className="logo position-absolute" alt={getConfig().SITE_NAME} src={getConfig().LOGO_WHITE_URL} />

@@ -1,5 +1,6 @@
 // Load component based styles
 @import "_base_component.scss";
+@import "_buttons.scss";
 //
 // ----------------------------
 // #COLORS
@@ -35,7 +36,7 @@ $elevation-level-2-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
 
 .main-content {
   @extend .pt-4;
-  min-width: 464px !important;
+  min-width: 590px !important;
 }
 
 .welcome-page-content {
@@ -596,7 +597,7 @@ select.form-control {
 .pgn__form-control-decorator-group {
   color: var(--Blue-Dark, #06263D) !important;
   text-align: right;
-  font-family: "Noto Kufi Arabic" !important;
+  font-family: "TheSansArabic" !important;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -607,14 +608,14 @@ select.form-control {
 
 
 .form-control {
-  border: none !important;
-  border-bottom: 1px solid #06263D !important;
+  border: 1px solid #262626;
+  height: 50px;
   border-radius: 0 !important;
 
 }
 
 .alert-content {
-  font-family: "Noto Kufi Arabic" !important;
+  font-family: "TheSansArabic" !important;
   color: var(--Blue-Dark, #06263D) !important;
 }
 
@@ -623,13 +624,38 @@ select.form-control {
 }
 
 a#forgot-password {
-  font-family: "Noto Kufi Arabic" !important;
+  font-family: "TheSansArabic" !important;
+  color: var(--black, #262626);
+  text-align: right;
+  font-family: 'TheSansArabic';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+  opacity: 0.5;
 }
 
 .pgn__form-control-description {
-  font-family: "Noto Kufi Arabic" !important;
+  font-family: "TheSansArabic" !important;
 }
 
 .pgn__form-group {
   margin-bottom: 24px !important;
+}
+
+.nav-tabs .nav-link {
+  @include secondary-button;
+  border:none;
+}
+
+.nav-tabs .nav-link{
+  border-right: none !important;
+}
+
+
+.register-stateful-button-width , .login-button-width, .forgot-password-button-width{
+  @include primary-button;
+  border-radius: 0;
 }

@@ -7,13 +7,14 @@ import classNames from 'classnames';
 
 import messages from './messages';
 
+import bennerHorizontal from './banner_horizontal.png';
+
 const SmallLayout = ({ intl }) => (
-  <span className="bg-primary-400 w-100">
-    <div className="position-absolute top-0 end-0 text-white p-4">
-      <p className="banner-text-sm">مكافحة الفساد،
-      <br/>
-بدءاً من مكان العمل.</p>
-    </div>
+  <span className="bg-primary-400 w-100"
+  style={{ backgroundImage: `url('${bennerHorizontal}')`, backgroundSize: 'cover', backgroundPosition: 'center'
+    }}>
+  
+   
    
     <div>
       <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
