@@ -29,11 +29,11 @@ const TermsOfService = (props) => {
                        It is a legal document that users must agree to."
           values={{
             platformName: getConfig().SITE_NAME,
-            termsOfService: (
-              <Hyperlink variant="muted" destination={getConfig().TOS_LINK || `${getConfig().LMS_BASE_URL}/tos`} target="_blank">
-                {intl.formatMessage(messages['terms.of.service'])}
-              </Hyperlink>
-            ),
+            //termsOfService: (
+            //  <Hyperlink variant="muted" destination={getConfig().TOS_LINK || `${getConfig().LMS_BASE_URL}/tos`} target="_blank">
+              //  {intl.formatMessage(messages['terms.of.service'])}
+              // </Hyperlink>
+            //),
           }}
         />
       </Form.Checkbox>

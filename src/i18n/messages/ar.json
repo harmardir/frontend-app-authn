@@ -183,7 +183,7 @@
   "registration.username.suggestion.label": "مقترح:",
   "registration.using.tpa.form.heading": "إتمام إنشاء حسابك",
   "did.you.mean.alert.text": "هل تقصد",
-  "register.page.terms.of.service": " أوافق على {termsOfService} الخاصة بـمكين ",
+  "register.page.terms.of.service": " أوافق على شروط الخدمة الخاصة بـمكين ",
   "sign.in": "تسجيل الدخول",
   "reset.password.page.title": "إعادة ضبط كلمة المرور | {siteName}",
   "reset.password": "إعادة ضبط كلمة المرور",
