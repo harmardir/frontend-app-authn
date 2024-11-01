@@ -7,20 +7,15 @@ import classNames from 'classnames';
 
 import messages from './messages';
 
+import bennerHorizontal from './banner_horizontal.png';
+
 const MediumLayout = ({ intl }) => (
 
     
     <div className="w-100 p-0 mb-3 d-flex banner__image medium-layout midium-banner"
-    style={{ backgroundImage: `url('https://undp-lms.kashida-learning.co/static/undp_ac_theme/images/login_banner_md.png')`
+    style={{ backgroundImage: `url('${bennerHorizontal}')`, backgroundSize: 'cover', backgroundPosition: 'center'
     }}>
-      {/* Text overlay */}
-      <div className="position-absolute text-white p-4"
-    style={{left: '25%'}}
-    >
-      <p className="banner-text-md">مكافحة الفساد،
-      <br/>
-بدءاً من مكان العمل.</p>
-    </div>
+    
         
         <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
           <Image alt={getConfig().SITE_NAME} className="logo" src={getConfig().LOGO_WHITE_URL} />
